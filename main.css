@@ -5,11 +5,15 @@ body {
 
 .logo {
   padding-top: 5%;
+  margin-bottom: 3%;
 }
 
 .form-header {
   margin-top: 0;
+  color: #fff;
   margin-bottom: 3.5%;
+  text-transform: uppercase;
+  letter-spacing: 1.11px:
 }
 
 
@@ -23,7 +27,7 @@ body {
 
 .register-form {
   border: 1px solid #333;
-  background-color: rgba(69, 69, 69, 0.66);
+  background-color: rgba(69, 69, 69, 0.45);
   padding: 3% 4% 3.5% 5%;
   width: 60%;
   margin: 0 auto;
