@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.css">
   </head>
   <body>
     <section class="homepage">
       <img class="logo" src="https://metallica.com/on/demandware.static/Sites-Metallica-Site/-/default/dw716898e9/images/header/logo-homepage.svg">
-      <h1 class='form-header'>Thank You For Registering</h1>
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1 class='form-header fade-in-up' id='thanksHeader'></h1>
+      <p class="text fade-in-up">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
       </section>
+      <script>
+        let text = document.getElementById('thanksHeader');
+        text.innerText = "Thank you for registering, " + window.location.search.split('name=')[1];
+      </script>
   </body>
 </html>
